@@ -1,20 +1,19 @@
 {
   "readmeUrl": "https://raw.githubusercontent.com/cveinnt/cveinnt/master/README.md",
-  "title": "LiveTerm",
-  "name": "John Doe",
-  "ascii": "liveterm",
+  "title": "Ahmed's Portfolio",
+  "name": "Ahmed Saed",
+  "ascii": "portfolio",
   "social": {
-    "github": "github",
-    "linkedin": "linkedin"
+    "github": "https://github.com/Ahmedsaed",
+    "linkedin": "https://www.linkedin.com/in/ahmedsaed26"
   },
-  "email": "contact@email.com",
-  "ps1_hostname": "liveterm",
-  "ps1_username": "visitor",
-  "repo": "https://github.com/Cveinnt/LiveTerm",
-  "resume_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Resume.pdf",
+  "email": "mail@ahmedsaed26",
+  "ps1_hostname": "Ahmed Saed",
+  "ps1_username": "guest",
+  "repo": "https://github.com/Ahmedsaed/LiveTerm-Portfolio",
+  "resume_url": "https://drive.google.com/file/d/1m8bnNzeQkd9xkDeuDF6pgIjHIOgNhaLC/view?usp=sharing",
   "donate_urls": {
-    "paypal": "https://paypal.me/cveinnt",
-    "patreon": "https://patreon.com/cveinnt"
+    "buymeacoffee": "https://www.buymeacoffee.com/ahmedsaed"
   },
   "colors": {
     "light": {
