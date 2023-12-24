@@ -4,7 +4,7 @@ import config from '../../config.json';
 import { Input } from '../components/input';
 import { useHistory } from '../components/history/hook';
 import { History } from '../components/history/History';
-import { banner } from '../utils/bin';
+import { sumfetch } from '../utils/bin';
 
 interface IndexPageProps {
   inputRef: React.MutableRefObject<HTMLInputElement>;
@@ -22,7 +22,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
     setLastCommandIndex,
   } = useHistory([]);
 
-  const init = React.useCallback(() => setHistory(banner()), []);
+  const init = React.useCallback(async () => { setHistory(await sumfetch([""])) }, []);
 
   React.useEffect(() => {
     init();
@@ -42,7 +42,7 @@ const IndexPage: React.FC<IndexPageProps> = ({ inputRef }) => {
       </Head>
 
       <div className="p-8 overflow-hidden h-full border-2 rounded border-light-yellow dark:border-dark-yellow">
-        <div ref={containerRef} className="overflow-y-auto h-full">
+        <div ref={containerRef} className="overflow-y-auto h-full terminal-width">
           <History history={history} />
 
           <Input
