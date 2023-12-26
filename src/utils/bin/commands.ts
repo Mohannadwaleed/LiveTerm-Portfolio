@@ -5,20 +5,56 @@ import config from '../../../config.json';
 
 // Help
 export const help = async (args: string[]): Promise<string> => {
-  const commands = Object.keys(bin);
-  var c = '';
-  for (let i = 1; i <= commands.length; i++) {
-    if (i % 7 === 0) {
-      c += commands[i - 1] + '\n';
-    } else {
-      c += commands[i - 1] + ' ';
-    }
-  }
+  // const commands = Object.keys(bin);
+  // var c = '';
+  // for (let i = 1; i <= commands.length; i++) {
+  //   if (i % 7 === 0) {
+  //     c += commands[i - 1] + '\n';
+  //   } else {
+  //     c += commands[i - 1] + ' ';
+  //   }
+  // }
+
+  const c = `----------------
+|   Contact    |
+----------------
+email     - open mailto:${config.email}
+github    - open github profile
+linkedin  - open linkedin profile
+
+----------------
+|   About Me   |
+----------------
+about     - more about me
+resume    - open resume
+donate    - support my work
+sumfetch  - display summary
+banner    - display a cool banner
+projects  - display github projects
+
+----------------
+| Fun Commands |
+----------------
+echo      - echo arguments
+whoami    - display username
+ls        - list directories
+cd        - change directory
+date      - display current date
+sudo      - elevate privileges
+quote     - display random quote
+weather   - display weather
+
+----------------
+|   Other      |
+----------------
+repo      - open github repo
+help      - display this help message
+`;
+
   return `Welcome! Here are all the available commands:
-\n${c}\n
+${c}
 [tab]: trigger completion.
 [ctrl+l]/clear: clear terminal.\n
-Type 'sumfetch' to display summary.
 `;
 };
 
@@ -31,7 +67,9 @@ export const repo = async (args: string[]): Promise<string> => {
 // About
 export const about = async (args: string[]): Promise<string> => {
   return `Hi, I am ${config.name}.
-Welcome to my website!
+
+${config['about']}
+
 More about me:
 'sumfetch' - short summary.
 'resume' - my latest resume.

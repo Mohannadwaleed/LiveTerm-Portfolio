@@ -39,3 +39,13 @@ div#__next > div {
 ::-webkit-scrollbar-thumb:hover {
   background: #ff8037;
 }
+
+.underline {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.underline-description > span {
+  display: inline-block;
+  text-decoration: underline;
+}
