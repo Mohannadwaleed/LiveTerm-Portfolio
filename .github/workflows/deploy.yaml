@@ -26,6 +26,7 @@ jobs:
           npm run build
           npm run export
           touch out/.nojekyll
+          echo ahmedsaed.me > out/CNAME
 
       - name: Deploy to ahmedsaed.github.io
         uses: tagus/git-deploy@v0.5.0
