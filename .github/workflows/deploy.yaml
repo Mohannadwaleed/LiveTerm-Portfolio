@@ -33,6 +33,7 @@ jobs:
           changes: out
           repository: git@github.com:Ahmedsaed/ahmedsaed.github.io.git
           ssh_key: ${{ secrets.REPO_DEPLOY_KEY }}
+          branch: master
           name: Ahmedsaed
           email: ahmedsaed2652003@gmail.com
           clean_repo: true
